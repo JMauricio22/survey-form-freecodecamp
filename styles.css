@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+:root {
+  --font-color: white;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  background-image: linear-gradient(
+      to right,
+      rgb(128, 0, 128, 0.8),
+      rgb(255, 192, 203, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1580234811497-9df7fd2f357e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Z2FtaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--font-color);
+  font-size: 1rem;
+  margin: 0;
+}
+#container {
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+}
+header {
+  margin: 0 0 2em 0;
+}
+#title {
+  font-size: 2rem;
+}
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1em;
+}
+p {
+  font-size: 1rem;
+  margin-top: 0;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+}
+form {
+  margin: 0 auto;
+  background: #81cb8f;
+  border-radius: 10px;
+  max-width: 600px;
+  font-size: 1rem;
+  padding: 1em 2em;
+}
+.form-group {
+  width: 100%;
+  padding: 0.7em 0;
+  text-align: left;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 8px;
+  outline: none;
+}
+.form-control:focus {
+  border: 2px solid #cb81bd;
+}
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.input-checkbox {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5rem;
+}
+.input-radio {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5rem;
+}
+.submit {
+  background: #aa3b36;
+  color: inherit;
+  cursor: pointer;
+  height: 45px;
+}
+
+@media (max-width: 850px) {
+  form {
+    max-width: 500px;
+  }
+}
+@media (max-width: 662px) {
+  form {
+    max-width: 450px;
+  }
+}
+@media (max-width: 490px) {
+  #container {
+    padding: 0;
+  }
+  form {
+    max-width: 100%;
+    margin: 0;
+    padding: 1em 0.8em;
+  }
+}

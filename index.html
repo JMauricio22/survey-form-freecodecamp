@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1 id="title">Video Game Survey Form</h1>
+        <p id="description" class="description">
+          Thank you for taking the time to answer the survey
+        </p>
+      </header>
+
+      <form action="" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label
+          ><input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label
+          ><input
+            class="form-control"
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="number" id="number-label">Age(Optional)</label
+          ><input
+            type="number"
+            class="form-control"
+            id="number"
+            min="1"
+            max="100"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="game-category"
+            >What is your favorite game category?</label
+          >
+
+          <select name="game-category" id="dropdown" class="form-control">
+            <option value="None" selected disabled>Select Category</option>
+            <option value="action games">Action games</option>
+            <option value="action-adventure games">
+              Action-adventure games
+            </option>
+            <option value="adventure games">Adventure games</option>
+            <option value="role-playing games">Role-playing games</option>
+            <option value="simulation games">Simulation games</option>
+            <option value="strategy games">Strategy games</option>
+            <option value="sports games">Sports games</option>
+            <option value="puzzle games">Puzzle games</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Games on desktop consoles or PC?</p>
+
+          <label for="consoles">
+            <input
+              type="checkbox"
+              id="consoles"
+              value="consoles"
+              class="input-checkbox"
+            />
+            Consoles
+          </label>
+
+          <label for="pc">
+            <input type="checkbox" id="pc" value="pc" class="input-checkbox" />
+            PC
+          </label>
+
+          <label for="none">
+            <input
+              type="checkbox"
+              id="none"
+              value="none"
+              class="input-checkbox"
+            />
+            None
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>How many hours do you play a week approximately?</p>
+          <label for="">
+            <input type="radio" name="hours" value="0" class="input-radio" />
+            0-5</label
+          >
+          <label for="">
+            <input type="radio" name="hours" value="1" class="input-radio" />
+            6-12</label
+          >
+          <label for="">
+            <input type="radio" name="hours" value="2" class="input-radio" />
+            13 or more</label
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="comment"
+            >Do you consider playing video games a waste of time?</label
+          ><textarea
+            id="comment"
+            cols="30"
+            rows="10"
+            class="form-control"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="submit"
+            id="submit"
+            value="Submit"
+            class="form-control submit"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
